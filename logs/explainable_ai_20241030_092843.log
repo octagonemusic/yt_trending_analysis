@@ -1,0 +1,48 @@
+2024-10-30 09:28:43,514 - Starting Explainable AI Analysis
+2024-10-30 09:28:44,116 - 
+Model Performance Metrics:
+2024-10-30 09:28:44,130 - 
+Regression Model:
+2024-10-30 09:28:44,130 - R2 Score: 0.7702
+2024-10-30 09:28:44,130 - RMSE: 0.5955
+2024-10-30 09:28:44,141 - 
+Classification Model:
+2024-10-30 09:28:44,142 - Accuracy: 0.9000
+2024-10-30 09:28:44,142 - 
+Classification Report:
+2024-10-30 09:28:44,152 - 
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91         6
+           1       0.80      1.00      0.89         4
+
+    accuracy                           0.90        10
+   macro avg       0.90      0.92      0.90        10
+weighted avg       0.92      0.90      0.90        10
+
+2024-10-30 09:28:44,152 - 
+Generating SHAP explanations for regression model...
+2024-10-30 09:28:44,776 - 
+SHAP Feature Importance (regression):
+2024-10-30 09:28:44,779 - 
+               feature  importance
+1     subscriber_count    0.396435
+4            video_age    0.214586
+3   channel_view_count    0.167065
+9          day_of_week    0.123734
+8       hour_published    0.054716
+0             duration    0.044919
+2  channel_video_count    0.021909
+6          is_licensed    0.018702
+5          category_id    0.012399
+7          has_caption    0.001799
+2024-10-30 09:28:44,779 - 
+Debug Information:
+2024-10-30 09:28:44,779 - X_test shape: (10, 10)
+2024-10-30 09:28:44,779 - Feature names length: 10
+2024-10-30 09:28:44,779 - Mean abs SHAP values shape: (10,)
+2024-10-30 09:28:44,780 - 
+Generating SHAP explanations for classification model...
+2024-10-30 09:28:44,860 - Error in SHAP explanation: Per-column arrays must each be 1-dimensional
+2024-10-30 09:28:44,860 - SHAP values shape: (10, 10, 2)
+2024-10-30 09:28:44,860 - X_test shape: (10, 10)

@@ -1,0 +1,55 @@
+2024-10-30 10:29:49,665 - Starting Like Count Prediction Analysis
+2024-10-30 10:29:49,886 - 
+Initial data shape: (50, 21)
+2024-10-30 10:29:49,887 - Missing Like Count values: 1
+2024-10-30 10:29:49,890 - Shape after removing NaN: (49, 21)
+2024-10-30 10:29:49,924 - 
+Feature info:
+2024-10-30 10:29:49,925 - Features shape: (49, 21)
+2024-10-30 10:29:49,926 - Any NaN in features: False
+2024-10-30 10:30:11,173 - 
+Model Performance Metrics:
+2024-10-30 10:30:11,173 - R2 Score: 0.5340
+2024-10-30 10:30:11,174 - RMSE: 1.0705
+2024-10-30 10:30:11,174 - 
+Generating SHAP explanations...
+2024-10-30 10:30:11,699 - 
+SHAP Feature Importance:
+2024-10-30 10:30:11,702 - 
+                  feature  importance
+5              view_count    1.385659
+1        subscriber_count    0.679861
+11          views_per_sub    0.242814
+8             has_caption    0.176651
+7             is_licensed    0.154073
+2     channel_video_count    0.116017
+6             category_id    0.076575
+3      channel_view_count    0.037193
+13      channel_avg_views    0.034357
+12          views_per_day    0.027574
+4               video_age    0.025635
+10            day_of_week    0.023362
+9          hour_published    0.016982
+0                duration    0.012950
+16          is_peak_hours    0.007327
+19   view_sub_interaction    0.003727
+15             is_weekend    0.003017
+17           title_length    0.002909
+20  time_view_interaction    0.000942
+14      sub_to_view_ratio    0.000349
+18       title_word_count    0.000000
+2024-10-30 10:30:11,702 - 
+Generating LIME explanations...
+2024-10-30 10:30:12,064 - 
+Worst Predictions Analysis:
+2024-10-30 10:30:12,065 -          true  predicted     error  ...  title_word_count  view_sub_interaction  time_view_interaction
+20   9.192176  11.273606  2.081430  ...                12              0.034111              3057540.0
+13  11.688961  12.982318  1.293357  ...                 4              0.000866              7721994.0
+27   7.819234   9.063681  1.244446  ...                10              0.003539               119111.0
+48   8.506132   9.720448  1.214316  ...                17              0.004212               414328.0
+28  10.783944  11.806357  1.022414  ...                 5              0.002989              3569824.0
+
+[5 rows x 24 columns]
+2024-10-30 10:30:12,111 - 
+Analysis complete. Log file saved to: like_count_20241030_102949.log
+2024-10-30 10:30:12,112 - Visualizations saved in current directory

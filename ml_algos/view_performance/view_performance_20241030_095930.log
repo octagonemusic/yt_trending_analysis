@@ -1,0 +1,37 @@
+2024-10-30 09:59:30,931 - Starting View Performance Classification Analysis
+2024-10-30 09:59:31,138 - 
+Model Performance Metrics:
+2024-10-30 09:59:31,138 - Accuracy: 0.9000
+2024-10-30 09:59:31,138 - 
+Classification Report:
+2024-10-30 09:59:31,143 - 
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91         6
+           1       0.80      1.00      0.89         4
+
+    accuracy                           0.90        10
+   macro avg       0.90      0.92      0.90        10
+weighted avg       0.92      0.90      0.90        10
+
+2024-10-30 09:59:31,143 - 
+Generating SHAP explanations...
+2024-10-30 09:59:31,401 - 
+SHAP Feature Importance:
+2024-10-30 09:59:31,403 - 
+               feature  importance
+9          day_of_week    0.103188
+8       hour_published    0.103188
+2  channel_video_count    0.050111
+3   channel_view_count    0.050111
+7          has_caption    0.046380
+6          is_licensed    0.046380
+0             duration    0.020127
+1     subscriber_count    0.020127
+4            video_age    0.018955
+5          category_id    0.018955
+2024-10-30 09:59:31,403 - 
+Generating LIME explanations...
+2024-10-30 09:59:31,652 - 
+Analysis complete. Log file saved to: view_performance_20241030_095930.log
+2024-10-30 09:59:31,652 - Visualizations saved in current directory

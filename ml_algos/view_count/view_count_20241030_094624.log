@@ -1,0 +1,26 @@
+2024-10-30 09:46:24,813 - Starting View Count Prediction Analysis
+2024-10-30 09:46:25,016 - 
+Model Performance Metrics:
+2024-10-30 09:46:25,017 - R2 Score: 0.7702
+2024-10-30 09:46:25,017 - RMSE: 0.5955
+2024-10-30 09:46:25,017 - 
+Generating SHAP explanations...
+2024-10-30 09:46:25,273 - 
+SHAP Feature Importance:
+2024-10-30 09:46:25,275 - 
+               feature  importance
+1     subscriber_count    0.396435
+4            video_age    0.214586
+3   channel_view_count    0.167065
+9          day_of_week    0.123734
+8       hour_published    0.054716
+0             duration    0.044919
+2  channel_video_count    0.021909
+6          is_licensed    0.018702
+5          category_id    0.012399
+7          has_caption    0.001799
+2024-10-30 09:46:25,275 - 
+Generating LIME explanations...
+2024-10-30 09:46:25,523 - 
+Analysis complete. Log file saved to: view_count_20241030_094624.log
+2024-10-30 09:46:25,523 - Visualizations saved in current directory

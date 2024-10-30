@@ -1,0 +1,134 @@
+2024-10-30 09:16:26,355 - Starting YouTube Trending Videos Analysis
+2024-10-30 09:16:26,355 - Reading and cleaning data...
+2024-10-30 09:16:26,427 - 
+Dataset Info:
+2024-10-30 09:16:26,433 - <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 50 entries, 0 to 49
+Data columns (total 22 columns):
+ #   Column                    Non-Null Count  Dtype         
+---  ------                    --------------  -----         
+ 0   Video ID                  50 non-null     object        
+ 1   Title                     50 non-null     object        
+ 2   Published At              50 non-null     datetime64[ns]
+ 3   Channel ID                50 non-null     object        
+ 4   Channel Title             50 non-null     object        
+ 5   Category ID               50 non-null     int64         
+ 6   Tags                      39 non-null     object        
+ 7   View Count                50 non-null     int64         
+ 8   Like Count                49 non-null     float64       
+ 9   Favorite Count            50 non-null     int64         
+ 10  Comment Count             46 non-null     float64       
+ 11  Duration (Seconds)        50 non-null     int64         
+ 12  Definition                50 non-null     object        
+ 13  Caption                   50 non-null     bool          
+ 14  Licensed Content          50 non-null     bool          
+ 15  Region Restriction        8 non-null      object        
+ 16  Channel Country           41 non-null     object        
+ 17  Channel Subscriber Count  50 non-null     int64         
+ 18  Channel Video Count       50 non-null     int64         
+ 19  Channel View Count        50 non-null     int64         
+ 20  Collection Date           50 non-null     datetime64[ns]
+ 21  Video Age (Days)          50 non-null     float64       
+dtypes: bool(2), datetime64[ns](2), float64(3), int64(7), object(8)
+memory usage: 8.0+ KB
+
+2024-10-30 09:16:26,434 - 
+=== Basic Statistics ===
+2024-10-30 09:16:26,434 - Total number of videos: 50
+2024-10-30 09:16:26,434 - 
+Numerical columns summary:
+2024-10-30 09:16:26,461 - 
+                     Published At  Category ID    View Count     Like Count  Favorite Count  Comment Count  Duration (Seconds)  Channel Subscriber Count  Channel Video Count  Channel View Count                Collection Date  Video Age (Days)
+count                          50    50.000000  5.000000e+01      49.000000            50.0      46.000000           50.000000              5.000000e+01            50.000000        5.000000e+01                             50         50.000000
+mean   2024-10-28 06:49:01.520000    18.360000  1.807854e+06   77915.551020             0.0    7571.369565         1038.860000              6.976838e+06          9751.680000        2.280981e+09  2024-10-30 09:02:51.159999488          2.092936
+min           2024-10-19 23:00:31     1.000000  1.191110e+05    1584.000000             0.0     174.000000           78.000000              4.180000e+04            62.000000        2.364308e+07            2024-10-30 09:02:45          0.733970
+25%           2024-10-27 21:12:29    17.000000  4.344358e+05   19439.000000             0.0    1286.250000          212.000000              5.842500e+05           246.750000        2.876624e+08            2024-10-30 09:02:48          1.289902
+50%    2024-10-28 15:44:56.500000    20.000000  8.450140e+05   38272.000000             0.0    2785.500000          880.000000              2.635000e+06           554.000000        1.199532e+09            2024-10-30 09:02:51          1.720793
+75%           2024-10-29 02:05:18    24.000000  1.866764e+06   85202.000000             0.0    5672.000000         1575.250000              1.092500e+07          3300.250000        2.579938e+09            2024-10-30 09:02:54          2.493351
+max           2024-10-29 15:25:52    28.000000  1.520110e+07  776674.000000             0.0   86797.000000         4529.000000              4.420000e+07        296897.000000        1.781770e+10            2024-10-30 09:02:58         10.418287
+std                           NaN     7.147884  2.586702e+06  135541.380899             0.0   14497.874849          917.101334              9.303339e+06         42364.114256        3.358489e+09                            NaN          1.587306
+2024-10-30 09:16:26,461 - 
+Missing values:
+2024-10-30 09:16:26,462 - 
+Video ID                     0
+Title                        0
+Published At                 0
+Channel ID                   0
+Channel Title                0
+Category ID                  0
+Tags                        11
+View Count                   0
+Like Count                   1
+Favorite Count               0
+Comment Count                4
+Duration (Seconds)           0
+Definition                   0
+Caption                      0
+Licensed Content             0
+Region Restriction          42
+Channel Country              9
+Channel Subscriber Count     0
+Channel Video Count          0
+Channel View Count           0
+Collection Date              0
+Video Age (Days)             0
+2024-10-30 09:16:26,462 - 
+=== Creating Visualizations ===
+2024-10-30 09:16:26,463 - Creating View Count Distribution plot...
+2024-10-30 09:16:28,295 - 
+=== Generating Insights ===
+2024-10-30 09:16:28,296 - 
+Detailed Statistics:
+2024-10-30 09:16:28,298 - View Count Stats:
+count    5.000000e+01
+mean     1.807854e+06
+std      2.586702e+06
+min      1.191110e+05
+25%      4.344358e+05
+50%      8.450140e+05
+75%      1.866764e+06
+max      1.520110e+07
+2024-10-30 09:16:28,300 - 
+Like Count Stats:
+count        49.000000
+mean      77915.551020
+std      135541.380899
+min        1584.000000
+25%       19439.000000
+50%       38272.000000
+75%       85202.000000
+max      776674.000000
+2024-10-30 09:16:28,301 - 
+Comment Count Stats:
+count       46.000000
+mean      7571.369565
+std      14497.874849
+min        174.000000
+25%       1286.250000
+50%       2785.500000
+75%       5672.000000
+max      86797.000000
+2024-10-30 09:16:28,301 - 
+Top 10 Channels:
+2024-10-30 09:16:28,302 - 
+Channel Title
+Apple                         3
+Tyler, The Creator - Topic    3
+LazarBeam                     1
+Korporate Bidness             1
+Veritasium                    1
+Kurzgesagt – In a Nutshell    1
+Nintendo of America           1
+Safiya Nygaard                1
+MLB                           1
+Sam and Colby                 1
+2024-10-30 09:16:28,302 - 
+=== Key Insights ===
+2024-10-30 09:16:28,302 - - Average views: 1,807,854
+2024-10-30 09:16:28,302 - - Median views: 845,014
+2024-10-30 09:16:28,302 - - Most frequent channel in trending: Apple
+2024-10-30 09:16:28,302 - - Average video duration: 17.31 minutes
+2024-10-30 09:16:28,302 - - Average engagement rate: 4.72%
+2024-10-30 09:16:28,302 - 
+Analysis complete. Log file saved to: logs/eda_analysis_20241030_091626.log
+2024-10-30 09:16:28,302 - Visualizations saved in 'plots' directory
